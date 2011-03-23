@@ -1,0 +1,17 @@
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\RSCM_BKU_web.Report.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\RSCM_BKU_web.Report.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\RSCM_BKU_web.Report.KasBank.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\RSCM_BKU_web.Report.LaporanBKU.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\RSCM_BKU_web.Report.LaporanKasBank.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\RSCM_BKU_web.Report.LaporanKasBendaharaPengguna.resources
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\GenerateResource-ResGen.read.1.tlog
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\GenerateResource-ResGen.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\RSCM_BKU_web.Report.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\obj\Release\RSCM_BKU_web.Report.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Base.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Report.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Report.WebFx.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Base.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Report.xml
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_web.Report\bin\Release\Stimulsoft.Report.WebFx.xml

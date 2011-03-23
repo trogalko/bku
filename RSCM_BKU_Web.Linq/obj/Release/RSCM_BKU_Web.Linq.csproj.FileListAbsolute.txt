@@ -1,0 +1,6 @@
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web.Linq\bin\Release\RSCM_BKU_Web.Linq.dll.config
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web.Linq\bin\Release\RSCM_BKU_Web.Linq.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web.Linq\bin\Release\RSCM_BKU_Web.Linq.pdb
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web.Linq\obj\Release\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web.Linq\obj\Release\RSCM_BKU_Web.Linq.dll
+D:\Documents\Visual Studio 2010\Projects\RSCM_BKU_Web\RSCM_BKU_Web.Linq\obj\Release\RSCM_BKU_Web.Linq.pdb

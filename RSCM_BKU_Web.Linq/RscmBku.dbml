@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RSCM_BKU" Class="RscmBkuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=RSCM_BKU;Persist Security Info=True;User ID=sa;MultipleActiveResultSets=True" SettingsObjectName="RSCM_BKU_Web.Linq.Properties.Settings" SettingsPropertyName="RSCM_BKUConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AppProgram" Member="AppPrograms">
+    <Type Name="AppProgram">
+      <Column Name="ProgramID" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentProgramID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProgramName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TopLevelProgramID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RootLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="RowIndex" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="IsParentProgram" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgram" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsBeginGroup" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ProgramType" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="IsProgramAddAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramEditAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramDeleteAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramViewAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramApprovalAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramUnApprovalAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramVoidAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramUnVoidAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramDirectVoid" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsProgramPrintAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsMenuAddVisible" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsMenuHomeVisible" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsVisible" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDiscontinue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NavigateUrl" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="HelpLinkID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AssemblyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AssemblyClassName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="StoreProcedureName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AppUser" Member="AppUsers">
+    <Type Name="AppUser">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SRLanguage" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ActiveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUpdateDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUpdateByUserID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AppUserGroup" Member="AppUserGroups">
+    <Type Name="AppUserGroup">
+      <Column Name="UserGroupID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserGroupName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsEditAble" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdateDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUpdateByUserID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AppUserGroupProgram" Member="AppUserGroupPrograms">
+    <Type Name="AppUserGroupProgram">
+      <Column Name="UserGroupID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProgramID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsUserGroupAddAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUserGroupEditAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUserGroupDeleteAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUserGroupApprovalAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUserGroupUnApprovalAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUserGroupVoidAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUserGroupUnVoidAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsUserGroupExportAble" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LastUpdateDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUpdateByUserID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AppUserUserGroup" Member="AppUserUserGroups">
+    <Type Name="AppUserUserGroup">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserGroupID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastUpdateDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUpdateByUserID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Audit_Trail" Member="Audit_Trails">
+    <Type Name="Audit_Trail">
+      <Column Name="AT_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AKSI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ITEM_ACTION" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="FROM_BE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TO_BE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="USERBY" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DATE_ACTION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUTO_NUMBERING" Member="AUTO_NUMBERINGs">
+    <Type Name="AUTO_NUMBERING">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="KA_YEAR" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="KA_MONTH" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_NUMBER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PREFIX" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PREFIX_NUMBER" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DebitKredit" Member="DebitKredits">
+    <Type Name="DebitKredit">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Group_MA" Member="Group_MAs">
+    <Type Name="Group_MA">
+      <Column Name="GT_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GT_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="USER_INSERT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TGL_INSERT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USER_UPDATE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TGL_UPDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Group_MA_Kel_anggaran" Member="Kel_anggarans" ThisKey="GT_CODE" OtherKey="GT_CODE" Type="Kel_anggaran" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KAS" Member="KAs">
+    <Type Name="KA">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="KA_NAME" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="SALDO_AWAL" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PERIODE_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="PeriodeAnggaran_KA" Member="PeriodeAnggaran" ThisKey="PERIODE_ID" OtherKey="id" Type="PeriodeAnggaran" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.levelMA" Member="levelMAs">
+    <Type Name="levelMA">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[level]" Member="level" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Monthly_Balance" Member="Monthly_Balances">
+    <Type Name="Monthly_Balance">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MONTH" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="YEAR" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="INIT_BALANCE" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DEBIT" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="KREDIT" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="FINAL_BALANCE" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="USER_INSERT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USER_UPDATE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TGL_INSERT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TGL_UPDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PeriodeAnggaran" Member="PeriodeAnggarans">
+    <Type Name="PeriodeAnggaran">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Start_Period" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="End_Period" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Is_Closed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="PeriodeAnggaran_KA" Member="KAs" ThisKey="id" OtherKey="PERIODE_ID" Type="KA" />
+      <Association Name="PeriodeAnggaran_RAB" Member="RABs" ThisKey="id" OtherKey="PERIOD_ID" Type="RAB" />
+      <Association Name="PeriodeAnggaran_Tran" Member="Trans" ThisKey="id" OtherKey="PERIOD_ID" Type="Tran" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RAB" Member="RABs">
+    <Type Name="RAB">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="PERIOD_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="RAB" Member="RAB1" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Association Name="PeriodeAnggaran_RAB" Member="PeriodeAnggaran" ThisKey="PERIOD_ID" OtherKey="id" Type="PeriodeAnggaran" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kas_DataSource_ComboBox" Member="Kas_DataSource_ComboBoxes">
+    <Type Name="Kas_DataSource_ComboBox">
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="KA_NAME" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ParentId_DataSource_ComboBox" Member="ParentId_DataSource_ComboBoxes">
+    <Type Name="ParentId_DataSource_ComboBox">
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="KA_NAME" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RadMenuDataSource" Member="RadMenuDataSources">
+    <Type Name="RadMenuDataSource">
+      <Column Name="ProgramID" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentProgramID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProgramName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NavigateUrl" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kel_anggaran" Member="Kel_anggarans">
+    <Type Name="Kel_anggaran">
+      <Column Name="KA_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="KA_NAME" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="GT_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="PREFIX" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="IS_DETAIL" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="KA_LEVEL" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PARENT_CODE" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TYPE" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IS_ACTIVE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IS_KAS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="USER_INSERT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TGL_INSERT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USER_UPDATE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TGL_UPDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Kel_anggaran_Tran" Member="Trans" ThisKey="KA_CODE" OtherKey="KA_CODE" Type="Tran" />
+      <Association Name="Group_MA_Kel_anggaran" Member="Group_MA" ThisKey="GT_CODE" OtherKey="GT_CODE" Type="Group_MA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Trans" Member="Trans">
+    <Type Name="Tran">
+      <Column Name="BKU_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_NUMBER" Type="System.String" DbType="NVarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPT" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DEBIT_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="CREDIT_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="CEK_BG_NUMBER" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PERIOD_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ISVERIFIED" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IS_CLOSED" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="KAS_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="USER_INSERT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TGL_INSERT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USER_UPDATE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TGL_UPDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Kel_anggaran_Tran" Member="Kel_anggaran" ThisKey="KA_CODE" OtherKey="KA_CODE" Type="Kel_anggaran" IsForeignKey="true" />
+      <Association Name="PeriodeAnggaran_Tran" Member="PeriodeAnggaran" ThisKey="PERIOD_ID" OtherKey="id" Type="PeriodeAnggaran" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SaldoAwal" Member="SaldoAwals">
+    <Type Name="SaldoAwal">
+      <Column Name="SALDO_AWAL" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="Is_Closed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.transaksiBKU" Member="transaksiBKUs">
+    <Type Name="transaksiBKU">
+      <Column Name="TRANS_NUMBER" Type="System.String" DbType="NVarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="TRANS_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPT" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="KA_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="KA_NAME" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="GT_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DEBIT_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="CREDIT_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="IS_CLOSED" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISVERIFIED" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ACTIVE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spRadMenuDataSource" Method="spRadMenuDataSource">
+    <ElementType Name="spRadMenuDataSourceResult">
+      <Column Name="ProgramID" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentProgramID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProgramName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsBeginGroup" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDiscontinue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsVisible" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RowIndex" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsParentProgram" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NavigateUrl" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

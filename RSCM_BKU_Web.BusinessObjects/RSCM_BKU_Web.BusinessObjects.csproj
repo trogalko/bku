@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2341FCA-D3BE-4CB7-AA38-1646CDEC942E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RSCM_BKU_Web.BusinessObjects</RootNamespace>
+    <AssemblyName>RSCM_BKU_Web.BusinessObjects</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.LoaderMT">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.LoaderMT.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Web">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Web.Design">
+      <HintPath>C:\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\AppProgram.cs" />
+    <Compile Include="Custom\AppProgramCollection.cs" />
+    <Compile Include="Custom\AppProgramQuery.cs" />
+    <Compile Include="Custom\AppUser.cs" />
+    <Compile Include="Custom\AppUserCollection.cs" />
+    <Compile Include="Custom\AppUserGroup.cs" />
+    <Compile Include="Custom\AppUserGroupCollection.cs" />
+    <Compile Include="Custom\AppUserGroupProgram.cs" />
+    <Compile Include="Custom\AppUserGroupProgramCollection.cs" />
+    <Compile Include="Custom\AppUserGroupProgramQuery.cs" />
+    <Compile Include="Custom\AppUserGroupQuery.cs" />
+    <Compile Include="Custom\AppUserQuery.cs" />
+    <Compile Include="Custom\AppUserUserGroup.cs" />
+    <Compile Include="Custom\AppUserUserGroupCollection.cs" />
+    <Compile Include="Custom\AppUserUserGroupQuery.cs" />
+    <Compile Include="Custom\AuditTrail.cs" />
+    <Compile Include="Custom\AuditTrailCollection.cs" />
+    <Compile Include="Custom\AuditTrailQuery.cs" />
+    <Compile Include="Custom\AutoNumbering.cs" />
+    <Compile Include="Custom\AutoNumberingCollection.cs" />
+    <Compile Include="Custom\AutoNumberingQuery.cs" />
+    <Compile Include="Custom\DebitKredit.cs" />
+    <Compile Include="Custom\DebitKreditCollection.cs" />
+    <Compile Include="Custom\DebitKreditQuery.cs" />
+    <Compile Include="Custom\GroupMA.cs" />
+    <Compile Include="Custom\GroupMACollection.cs" />
+    <Compile Include="Custom\GroupMAQuery.cs" />
+    <Compile Include="Custom\Kas.cs" />
+    <Compile Include="Custom\KasCollection.cs" />
+    <Compile Include="Custom\KasQuery.cs" />
+    <Compile Include="Custom\KelAnggaran.cs" />
+    <Compile Include="Custom\KelAnggaranCollection.cs" />
+    <Compile Include="Custom\KelAnggaranQuery.cs" />
+    <Compile Include="Custom\LevelMA.cs" />
+    <Compile Include="Custom\LevelMACollection.cs" />
+    <Compile Include="Custom\LevelMAQuery.cs" />
+    <Compile Include="Custom\MonthlyBalance.cs" />
+    <Compile Include="Custom\MonthlyBalanceCollection.cs" />
+    <Compile Include="Custom\MonthlyBalanceQuery.cs" />
+    <Compile Include="Custom\PeriodeAnggaran.cs" />
+    <Compile Include="Custom\PeriodeAnggaranCollection.cs" />
+    <Compile Include="Custom\PeriodeAnggaranQuery.cs" />
+    <Compile Include="Custom\Rab.cs" />
+    <Compile Include="Custom\RabCollection.cs" />
+    <Compile Include="Custom\RabQuery.cs" />
+    <Compile Include="Custom\Trans.cs" />
+    <Compile Include="Custom\TransCollection.cs" />
+    <Compile Include="Custom\TransQuery.cs" />
+    <Compile Include="Generated\AppProgram.cs" />
+    <Compile Include="Generated\AppUser.cs" />
+    <Compile Include="Generated\AppUserGroup.cs" />
+    <Compile Include="Generated\AppUserGroupProgram.cs" />
+    <Compile Include="Generated\AppUserUserGroup.cs" />
+    <Compile Include="Generated\AuditTrail.cs" />
+    <Compile Include="Generated\AutoNumbering.cs" />
+    <Compile Include="Generated\DebitKredit.cs" />
+    <Compile Include="Generated\GroupMA.cs" />
+    <Compile Include="Generated\Kas.cs" />
+    <Compile Include="Generated\KasDataSourceComboBox.cs" />
+    <Compile Include="Generated\KelAnggaran.cs" />
+    <Compile Include="Generated\LevelMA.cs" />
+    <Compile Include="Generated\MonthlyBalance.cs" />
+    <Compile Include="Generated\ParentIdDataSourceComboBox.cs" />
+    <Compile Include="Generated\PeriodeAnggaran.cs" />
+    <Compile Include="Generated\Rab.cs" />
+    <Compile Include="Generated\RadMenuDataSource.cs" />
+    <Compile Include="Generated\SaldoAwal.cs" />
+    <Compile Include="Generated\Trans.cs" />
+    <Compile Include="Generated\TransaksiBKU.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

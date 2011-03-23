@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 18, 20.875" name="RscmBku">
+  <DataContextMoniker Name="/RscmBkuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0166fdc4-6ef4-4e46-9ce4-3ffb5edd8199" absoluteBounds="6.75, 10.75, 2, 6.5784326171874987">
+      <DataClassMoniker Name="/RscmBkuDataContext/AppProgram" />
+      <nestedChildShapes>
+        <elementListCompartment Id="668f7dd5-2a6f-4201-b65a-9e9eb7fa5f81" absoluteBounds="6.7650000005960464, 11.21000000089407, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42abfd19-e75f-4b0b-aedb-2220ae946471" absoluteBounds="9.75, 2.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/RscmBkuDataContext/AppUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b61ec4f7-6e96-4cb4-b1d8-a39e11f7b617" absoluteBounds="9.7650000005960464, 3.2100000008940697, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54bd9ee6-5cae-4dcf-9c1b-a3953dcc1583" absoluteBounds="0.75, 9.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/RscmBkuDataContext/AppUserGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de460d81-74fa-4634-a73c-067b0964cfde" absoluteBounds="0.76500000059604645, 10.21000000089407, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d01aaf3-04d4-42d0-957f-6d740dbf6e29" absoluteBounds="9.75, 6.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/RscmBkuDataContext/AppUserGroupProgram" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5cadc721-fe1f-492e-9867-3162dae0d4ca" absoluteBounds="9.7650000005960464, 7.21000000089407, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea182ac0-5b42-4679-a690-a200f3b6e326" absoluteBounds="9.75, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/RscmBkuDataContext/AppUserUserGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aeeb7420-8b82-47be-a5e5-1b23f2d8e588" absoluteBounds="9.7650000005960464, 11.21000000089407, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="020f4339-9660-45e2-a48f-fd91de853733" absoluteBounds="9.75, 13.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RscmBkuDataContext/Audit_Trail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c41c4e1b-8938-4be9-a593-329aa0a1cc0a" absoluteBounds="9.7650000005960464, 14.21000000089407, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df0430a7-55fc-4136-af96-3d2c17bff89e" absoluteBounds="12.75, 2.75, 2, 2.1554996744791661">
+      <DataClassMoniker Name="/RscmBkuDataContext/AUTO_NUMBERING" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a041f6b5-eada-4d8e-a631-0ceba9215307" absoluteBounds="12.765000000596046, 3.2100000008940697, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82f3da08-e2ab-42c5-ace7-4dbcf3053b87" absoluteBounds="12.75, 5.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RscmBkuDataContext/DebitKredit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9d28415-7d0c-43a9-8d6c-b3ee8286be3e" absoluteBounds="12.765000000596046, 6.21000000089407, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79fbc08f-f34e-4144-aef5-2a9f7d93f188" absoluteBounds="1, 2.25, 2, 1.9631982427090402">
+      <DataClassMoniker Name="/RscmBkuDataContext/Group_MA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2468f31-636b-4651-b19a-37177cf10599" absoluteBounds="1.0150000005960465, 2.7100000008940697, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85387fc7-32f0-4c6b-ad61-4fcdba42a284" absoluteBounds="3.5, 12.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/RscmBkuDataContext/KA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f95ba969-815b-4f12-acda-a9152992e1a2" absoluteBounds="3.5150000005960464, 12.96000000089407, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48d8198c-56f8-45a3-8dcc-9706e882d237" absoluteBounds="12.75, 7.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RscmBkuDataContext/levelMA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6739bd94-b66a-4d82-a85b-b14d27047f97" absoluteBounds="12.765000000596046, 8.21000000089407, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f3035d18-ff26-4cd0-b292-e4bdd71ec54c" absoluteBounds="12.75, 9.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/RscmBkuDataContext/Monthly_Balance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21b93dc0-542b-4268-97de-695479e29f16" absoluteBounds="12.765000000596046, 10.21000000089407, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbeb6f71-feaf-4340-a42b-67199c6287a0" absoluteBounds="0.75, 6.75, 2, 1.5785953775048256">
+      <DataClassMoniker Name="/RscmBkuDataContext/PeriodeAnggaran" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba0071be-486b-44cf-938b-ce723929be73" absoluteBounds="0.76500000059604645, 7.21000000089407, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f06a011-c910-45e9-a967-19bf5750628b" absoluteBounds="3.5, 5.5, 2, 1.5785953775048256">
+      <DataClassMoniker Name="/RscmBkuDataContext/RAB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2bbe54e-90d9-41c7-a776-3efa9ff00e28" absoluteBounds="3.5150000005960464, 5.96000000089407, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 8.32859537750483); (3.125 : 8.70359537750483); (3.125 : 13.3854484049479); (3.5 : 13.3854484049479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RscmBkuDataContext/PeriodeAnggaran/PeriodeAnggaran_KA" />
+      <nodes>
+        <classShapeMoniker Id="bbeb6f71-feaf-4340-a42b-67199c6287a0" />
+        <classShapeMoniker Id="85387fc7-32f0-4c6b-ad61-4fcdba42a284" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.91429768875241); (3.5 : 6.91429768875241)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RscmBkuDataContext/PeriodeAnggaran/PeriodeAnggaran_RAB" />
+      <nodes>
+        <classShapeMoniker Id="bbeb6f71-feaf-4340-a42b-67199c6287a0" />
+        <classShapeMoniker Id="8f06a011-c910-45e9-a967-19bf5750628b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="261968ff-1188-4adb-87df-2a150a48e1e0" absoluteBounds="12.75, 13.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RscmBkuDataContext/Kas_DataSource_ComboBox" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a098ee0-ba27-41d3-b5ee-f826fc059ab7" absoluteBounds="12.765000000596046, 14.21000000089407, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50c36bf6-c334-42a5-b2a0-6eb486db5faa" absoluteBounds="0.75, 15.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/RscmBkuDataContext/ParentId_DataSource_ComboBox" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6154ca05-2369-41da-8a77-56d7409eaa67" absoluteBounds="0.76500000059604645, 16.21000000089407, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c011f890-fb7c-450d-8f7c-5dc97645fd2a" absoluteBounds="12.75, 15.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/RscmBkuDataContext/RadMenuDataSource" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7b2bb72-d371-46da-a609-b912fdf526dc" absoluteBounds="12.765000000596046, 16.21000000089407, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b02cc7c-be17-4f5c-b59a-e30b0988d440" absoluteBounds="3.75, 0.75, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/RscmBkuDataContext/Kel_anggaran" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f59f5d25-d880-400d-a825-4fa51058c9f0" absoluteBounds="3.7649999999999997, 1.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 3.23159912135452); (3.75 : 3.23159912135452)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RscmBkuDataContext/Group_MA/Group_MA_Kel_anggaran" />
+      <nodes>
+        <classShapeMoniker Id="79fbc08f-f34e-4144-aef5-2a9f7d93f188" />
+        <classShapeMoniker Id="3b02cc7c-be17-4f5c-b59a-e30b0988d440" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c09cc8d8-8310-434e-b7c5-19749ad23630" absoluteBounds="6.5, 5.625, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/RscmBkuDataContext/Tran" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b6e56f1-27b7-4d59-ad7a-1b729edb7099" absoluteBounds="6.5150000005960464, 6.08500000089407, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.65625025 : 4.4439111328125); (5.65625025 : 8.32615397127966); (6.5 : 8.32615397127966)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RscmBkuDataContext/Kel_anggaran/Kel_anggaran_Tran" />
+      <nodes>
+        <classShapeMoniker Id="3b02cc7c-be17-4f5c-b59a-e30b0988d440" />
+        <classShapeMoniker Id="c09cc8d8-8310-434e-b7c5-19749ad23630" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.67112467439224); (5.57291691666667 : 7.67112467439224 : JumpStart); (5.73958358333333 : 7.67112467439224 : JumpEnd); (6.5 : 7.67112467439224)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RscmBkuDataContext/PeriodeAnggaran/PeriodeAnggaran_Tran" />
+      <nodes>
+        <classShapeMoniker Id="bbeb6f71-feaf-4340-a42b-67199c6287a0" />
+        <classShapeMoniker Id="c09cc8d8-8310-434e-b7c5-19749ad23630" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6ef1ab01-1353-427c-9786-e6126b1e2f88" absoluteBounds="15.75, 2.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/RscmBkuDataContext/SaldoAwal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4aad9a6-280d-4000-8bf0-87b4179ded29" absoluteBounds="15.765000000596046, 3.2100000008940697, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2eb907d-037a-4c8e-b31d-377be751ff0e" absoluteBounds="0.75, 17.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/RscmBkuDataContext/transaksiBKU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7c207f7-0cc7-46ba-bfb3-aab83816be71" absoluteBounds="0.76499999999999968, 18.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

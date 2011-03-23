@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <RSCM_BKU Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>RSCM_BKU</Alias>
+        <ConnectionString>Password=muhammad;Data Source=localhost;Integrated Security=False;Initial Catalog=RSCM_BKU;User ID=sa</ConnectionString>
+        <Name>RSCM_BKU</Name>
+      </RSCM_BKU>
+    </Databases>
+    <DataSources isList="true" count="3">
+      <Kel_anggaran Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Kel_anggaran</Alias>
+        <Columns isList="true" count="2">
+          <value>KA_CODE,System.String</value>
+          <value>KA_NAME,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>Kel_anggaran</Name>
+        <NameInSource>RSCM_BKU</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Kel_anggaran</SqlCommand>
+      </Kel_anggaran>
+      <Trans Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Trans</Alias>
+        <Columns isList="true" count="10">
+          <value>KA_CODE,System.String</value>
+          <value>TRANS_NUMBER,System.String</value>
+          <value>TRANS_DATE,System.DateTime</value>
+          <value>ISVERIFIED,System.String</value>
+          <value>IS_CLOSED,System.String</value>
+          <value>KAS_ID,System.String</value>
+          <value>DESCRIPT,System.String</value>
+          <value>DEBIT_AMOUNT,System.String</value>
+          <value>CREDIT_AMOUNT,System.String</value>
+          <value>CEK_BG_NUMBER,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>Trans</Name>
+        <NameInSource>RSCM_BKU</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Trans</SqlCommand>
+      </Trans>
+      <TransaksiKasBendaharaPengguna Ref="5" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>TransaksiKasBendaharaPengguna</Alias>
+        <Columns isList="true" count="6">
+          <value>TRANS_NUMBER,System.String</value>
+          <value>TRANS_DATE,System.DateTime</value>
+          <value>DEBIT_AMOUNT,System.Decimal</value>
+          <value>CREDIT_AMOUNT,System.Decimal</value>
+          <value>KA_NAME,System.String</value>
+          <value>DESCRIPT,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>TransaksiKasBendaharaPengguna</Name>
+        <NameInSource>RSCM_BKU</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>SELECT Trans.TRANS_NUMBER, Trans.TRANS_DATE, Kel_anggaran.KA_NAME, Trans.DESCRIPT,
+  Trans.DEBIT_AMOUNT, Trans.CREDIT_AMOUNT
+FROM Kel_anggaran INNER JOIN
+  Trans ON Kel_anggaran.KA_CODE = Trans.KA_CODE INNER JOIN
+  PeriodeAnggaran ON PeriodeAnggaran.id = Trans.PERIOD_ID, SaldoAwal
+WHERE Trans.KAS_ID = '1.01' AND PeriodeAnggaran.Is_Closed = 0 AND
+  Trans.ISVERIFIED = 1</SqlCommand>
+      </TransaksiKasBendaharaPengguna>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="1">
+    <Item5 Ref="6" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>id</CultureName>
+      <Items isList="true" count="0" />
+    </Item5>
+  </GlobalizationStrings>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="2">
+    <Page1 Ref="7" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <ReportTitleBand1 Ref="8" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,27.7,1.6</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>RSCM Kencana</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text2 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,27.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>Laporan Kas/Bank</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,27.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>Nama : Kas Bendahara Pengguna</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ReportTitleBand1>
+        <DataTransaksiKasBendaharaPengguna Ref="12" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2.8,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="6">
+            <DataTransaksiKasBendaharaPengguna_TRANS_NUMBER Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTransaksiKasBendaharaPengguna_TRANS_NUMBER</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{TransaksiKasBendaharaPengguna.TRANS_NUMBER}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTransaksiKasBendaharaPengguna_TRANS_NUMBER>
+            <DataTransaksiKasBendaharaPengguna_TRANS_DATE Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.6,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTransaksiKasBendaharaPengguna_TRANS_DATE</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{TransaksiKasBendaharaPengguna.TRANS_DATE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTransaksiKasBendaharaPengguna_TRANS_DATE>
+            <DataTransaksiKasBendaharaPengguna_DEBIT_AMOUNT Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.2,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTransaksiKasBendaharaPengguna_DEBIT_AMOUNT</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{TransaksiKasBendaharaPengguna.DEBIT_AMOUNT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTransaksiKasBendaharaPengguna_DEBIT_AMOUNT>
+            <DataTransaksiKasBendaharaPengguna_CREDIT_AMOUNT Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>13.8,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTransaksiKasBendaharaPengguna_CREDIT_AMOUNT</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{TransaksiKasBendaharaPengguna.CREDIT_AMOUNT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTransaksiKasBendaharaPengguna_CREDIT_AMOUNT>
+            <DataTransaksiKasBendaharaPengguna_KA_NAME Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>18.4,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTransaksiKasBendaharaPengguna_KA_NAME</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{TransaksiKasBendaharaPengguna.KA_NAME}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTransaksiKasBendaharaPengguna_KA_NAME>
+            <DataTransaksiKasBendaharaPengguna_DESCRIPT Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>23,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTransaksiKasBendaharaPengguna_DESCRIPT</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{TransaksiKasBendaharaPengguna.DESCRIPT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTransaksiKasBendaharaPengguna_DESCRIPT>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>TransaksiKasBendaharaPengguna</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataTransaksiKasBendaharaPengguna</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataTransaksiKasBendaharaPengguna>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>fe94ec720eb84a5da61f998ad65a2baf</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="19" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+    <Page2 Ref="20" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="0" />
+      <Conditions isList="true" count="0" />
+      <Guid>208d1304473445c6a0c747c5fe2c4d99</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page2</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="21" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page2>
+  </Pages>
+  <PreviewSettings>16650271</PreviewSettings>
+  <PrinterSettings Ref="22" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>3/18/2011 1:53:04 AM</ReportChanged>
+  <ReportCreated>3/18/2011 1:26:40 AM</ReportCreated>
+  <ReportFile />
+  <ReportGuid>c7a0a697395b49bdaaeb969c7e0a1314</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2011.1.910</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
